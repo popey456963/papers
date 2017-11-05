@@ -12,8 +12,8 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "express": "^4.16.2",
+    "server": "^1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -29,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/popey456963/papers/issues"
   },
-  "homepage": "https://github.com/popey456963/papers#readme",
-  "dependencies": {
-    "server": "^1.0.1"
-  }
+  "homepage": "https://github.com/popey456963/papers#readme"
 }

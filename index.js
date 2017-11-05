@@ -1,8 +1,10 @@
-const server = require('server')
-const { get, post } = server.router
-cosnt { render, json } = server.reply
+const express = require('express')
+const app = express()
 
-server({ port: 3000 }, {
-	get('/', ctx => 'Hello world')
-	get('/hi', ctx => render(''))
+app.get('/', (req, res) => {
+	res.send('Hello World!')
+})
+
+app.listen(3000, () => {
+	console.log('Example app listening on port 3000!')
 })
