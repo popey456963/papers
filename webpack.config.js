@@ -1,7 +1,6 @@
 // We are using node's native package 'path'
 // https://nodejs.org/api/path.html
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 // Constant with our paths
 const paths = {
   DIST: path.resolve(__dirname, 'static/js'),
