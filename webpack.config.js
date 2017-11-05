@@ -5,22 +5,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // Constant with our paths
 const paths = {
   DIST: path.resolve(__dirname, 'static/js'),
-  JS: path.resolve(__dirname, 'js'),
-  TEMP:path.resolve(__dirname,'templates')
+  JS: path.resolve(__dirname, 'front-js'),
 };
 
 // Webpack configuration
 module.exports = {
-  entry: path.join(paths.JS, 'entry.js'),
+  entry: path.join(paths.JS, 'main.js'),
   output: {
     path: paths.DIST,
-    filename: 'pageloader.js'
+    filename: 'main.js'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: __dirname + '/templates/notes.html',
-      filename: 'notes.html'
-    }),
   ],
   module: {
     rules: [
